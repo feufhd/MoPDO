@@ -1,0 +1,35 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+output/
+logs/
+vis_outputs/
+data/
+tmp/vtab_logs/
+# Runtime sweep state, worker PIDs, and local logs are not source artifacts.
+tmp/
+
+# Generated experiment results and analysis reports.
+datasets_mopdo/*_results.md
+datasets_mopdo/*_comparison.md
+datasets_mopdo/vtab_best_result_comparison.md
+analysis/
+
+# Keep only the minimal public launcher; local experiment/tuning scripts stay private.
+scripts/*
+!scripts/run.sh
+
+# Private baseline implementations not part of the public MoPDO release.
+models_mopdo/vit_full.py
+models_mopdo/vit_lora.py
+models_mopdo/vit_ssf.py
+train_vtab_vit_full.py
+
+*.pth
+*.pt
+*.npz
+*.npy
+*.whl
+*.xlsx
+*.log
